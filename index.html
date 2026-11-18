@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sheshnath Chauhan — Senior Frontend Software Developer</title>
+  <meta name="description"
+    content="Portfolio of Sheshnath Chauhan, a Senior Frontend Software Developer with 5+ years of experience building fast, accessible and responsive web applications." />
+  <meta name="theme-color" content="#0b0d12" />
+  <meta property="og:title" content="Sheshnath Chauhan — Senior Frontend Software Developer" />
+  <meta property="og:description" content="5+ years crafting fast, accessible, pixel-perfect web experiences." />
+  <meta property="og:image" content="images/profile.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ================= Header ================= -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#home" class="logo" aria-label="Sheshnath Chauhan — home">
+        <span class="logo-mark" aria-hidden="true">SN</span>
+        <span>Sheshnath Chauhan<span class="dot">.</span></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to light theme">
+          <i class="fa-solid fa-sun" aria-hidden="true"></i>
+        </button>
+        <a href="resume/Sheshnath.pdf" class="btn btn-primary btn-sm" download>
+          <i class="fa-solid fa-download" aria-hidden="true"></i> Resume
+        </a>
+        <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation menu"
+          aria-controls="navLinks" aria-expanded="false">
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ================= 1. Hero ================= -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="grid"></div>
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-content reveal">
+            <span class="status-pill"><span class="status-dot" aria-hidden="true"></span> Available for new
+              opportunities</span>
+            <p class="hero-greet">Hello, I&apos;m</p>
+            <h1 class="hero-title" id="hero-title">Sheshnath <span class="gradient-text">Chauhan</span></h1>
+            <p class="hero-role">
+              <span class="sr-only"> Frontend Developer </span>
+              <span aria-hidden="true"><span class="typed" id="typed"></span><span class="cursor"></span></span>
+            </p>
+            <p class="hero-desc">
+              I build responsive and scalable web applications, with 8 years of experience in frontend development,
+              React.js and modern web technologies.
+            </p>
+            <div class="hero-ctas">
+              <a href="#projects" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"
+                  aria-hidden="true"></i></a>
+              <a href="resume/sheshnath.pdf" class="btn btn-outline" download><i class="fa-solid fa-file-arrow-down"
+                  aria-hidden="true"></i> Download CV</a>
+              <a href="#contact" class="btn btn-outline"><i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
+                Hire Me</a>
+            </div>
+            <div class="socials">
+              <a href="https://github.com/uisheshnath" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+                  class="fa-brands fa-github" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/in/shesh212333/" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal" style="--d: 0.15s">
+            <div class="hero-ring" aria-hidden="true"></div>
+            <div class="hero-photo">
+              <img src="images/shesh11.png" alt="Portrait of Sheshnath Chauhan, Frontend Developer" width="800"
+                height="800" />
+            </div>
+            <div class="float-badge badge-1">
+              <span class="fb-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></span>
+              <span><strong>7+ Years</strong><small>Frontend Experience</small></span>
+            </div>
+            <div class="float-badge badge-2">
+              <span class="fb-icon" aria-hidden="true"><i class="fa-solid fa-rocket"></i></span>
+              <span><strong>40+ Projects</strong><small>Delivered</small></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-stats reveal" style="--d: 0.25s">
+          <div class="stat">
+            <div class="stat-num"><span data-count="7">0</span><span class="plus">+</span></div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num"><span data-count="40">0</span><span class="plus">+</span></div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num"><span data-count="25">0</span><span class="plus">+</span></div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num"><span data-count="90">0</span><span class="plus">%</span></div>
+            <div class="stat-label">Client Satisfaction</div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section"></a>
+    </section>
+
+    <!-- ================= 2. About ================= -->
+    <section class="section alt" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-media reveal">
+          <div class="about-img">
+            <img src="images/shehs22.png" alt="Sheshnath Chauhan working at a desk" width="800" height="800"
+              loading="lazy" />
+          </div>
+          <div class="exp-card">
+            <strong>7+</strong>
+            <span>Years of crafting<br />web experiences</span>
+          </div>
+        </div>
+
+        <div class="about-content reveal" style="--d: 0.1s">
+          <span class="eyebrow">About Me</span>
+          <h2 class="section-title" id="about-title">Building modern, <span class="gradient-text">scalable web
+              experiences</span></h2>
+          <p>
+            <!-- I&apos;m a <strong>Senior Frontend Software Developer</strong> with <strong>5+ years</strong> of professional experience
+            designing and building modern web applications for startups, agencies and enterprise teams. -->
+
+            I'm a <strong>Software Developer</strong> with <strong>7+ years</strong> of professional experience in web
+            development, specializing in frontend technologies and modern web applications.
+          </p>
+          <p>
+            I focus on <strong> building responsive, user-friendly interfaces using React.js, JavaScript, HTML and
+              CSS,</strong> with additional experience in backend development, API integration, e-commerce platforms and
+            WordPress.
+            I enjoy <strong>solving complex problems</strong> and delivering clean, maintainable and high-quality
+            solutions.
+          </p>
+
+
+
+          <!-- <p>
+            I specialise in <strong>responsive, mobile-first development</strong>, writing clean and maintainable
+            <strong>HTML, CSS and JavaScript</strong>, and obsessing over <strong>performance</strong> and
+            <strong>accessibility</strong>. I work closely with designers, product managers and backend engineers to ship
+            features that are reliable, scalable and genuinely enjoyable to use.
+          </p> -->
+
+          <div class="highlights">
+            <div class="highlight"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
+              <div>
+                <h3>Responsive Design</h3>
+                <p>Pixel-perfect on every screen size.</p>
+              </div>
+            </div>
+            <div class="highlight"><i class="fa-solid fa-gauge-high" aria-hidden="true"></i>
+              <div>
+                <h3>Performance</h3>
+                <p>90+ Lighthouse scores as standard.</p>
+              </div>
+            </div>
+            <div class="highlight"><i class="fa-solid fa-universal-access" aria-hidden="true"></i>
+              <div>
+                <h3>Accessibility</h3>
+                <p>WCAG 2.1 AA compliant interfaces.</p>
+              </div>
+            </div>
+            <div class="highlight"><i class="fa-solid fa-people-group" aria-hidden="true"></i>
+              <div>
+                <h3>Collaboration</h3>
+                <p>Agile teamwork & clear communication.</p>
+              </div>
+            </div>
+          </div>
+
+          <ul class="info-list">
+            <li><span>Name:</span><strong>Sheshnath Chauhan</strong></li>
+            <li><span>Email:</span><strong>shesh212333@gmail.com</strong></li>
+            <li><span>Location:</span><strong>Chennai, India</strong></li>
+            <li><span>Availability:</span><strong>Full-time / Freelance</strong></li>
+          </ul>
+
+          <div class="hero-ctas" style="margin-bottom: 0">
+            <a href="./resume/sheshnath.pdf" class="btn btn-primary" download><i class="fa-solid fa-download"
+                aria-hidden="true"></i> Download Resume</a>
+            <a href="#contact" class="btn btn-outline">Let&apos;s Talk</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 3. Skills ================= -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Skills &amp; Technologies</span>
+          <h2 class="section-title" id="skills-title">My <span class="gradient-text">tech toolkit</span></h2>
+          <p class="section-sub">The languages, frameworks and tools I use every day to build robust, high-quality
+            frontends.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-top"><span class="skill-icon" aria-hidden="true"><i
+                  class="devicon-html5-plain colored"></i></span>
+              <div>
+                <h3 class="skill-name">HTML5</h3><span class="skill-level">Expert</span>
+              </div>
+            </div>
+            <div class="progress-row"><span>Proficiency</span><strong>95%</strong></div>
+            <div class="progress" role="progressbar" aria-label="HTML5 proficiency" aria-valuenow="95" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar" data-width="95"></div>
+            </div>
+          </article>
+          <article class="skill-card reveal" style="--d: 0.05s">
+            <div class="skill-top"><span class="skill-icon" aria-hidden="true"><i
+                  class="devicon-css3-plain colored"></i></span>
+              <div>
+                <h3 class="skill-name">CSS3</h3><span class="skill-level">Expert</span>
+              </div>
+            </div>
+            <div class="progress-row"><span>Proficiency</span><strong>93%</strong></div>
+            <div class="progress" role="progressbar" aria-label="CSS3 proficiency" aria-valuenow="93" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar" data-width="93"></div>
+            </div>
+          </article>
+          <article class="skill-card reveal" style="--d: 0.1s">
+            <div class="skill-top"><span class="skill-icon" aria-hidden="true"><i
+                  class="devicon-javascript-plain colored"></i></span>
+              <div>
+                <h3 class="skill-name">JavaScript (ES6+)</h3><span class="skill-level">Expert</span>
+              </div>
+            </div>
+            <div class="progress-row"><span>Proficiency</span><strong>90%</strong></div>
+            <div class="progress" role="progressbar" aria-label="JavaScript proficiency" aria-valuenow="90"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" data-width="90"></div>
+            </div>
+          </article>
+          <article class="skill-card reveal" style="--d: 0.15s">
+            <div class="skill-top"><span class="skill-icon" aria-hidden="true"><i
+                  class="devicon-typescript-plain colored"></i></span>
+              <div>
+                <h3 class="skill-name">TypeScript</h3><span class="skill-level">Advanced</span>
+              </div>
+            </div>
+            <div class="progress-row"><span>Proficiency</span><strong>82%</strong></div>
+            <div class="progress" role="progressbar" aria-label="TypeScript proficiency" aria-valuenow="82"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" data-width="82"></div>
+            </div>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-top"><span class="skill-icon" aria-hidden="true"><i
+                  class="devicon-sass-original colored"></i></span>
+              <div>
+                <h3 class="skill-name">SASS / SCSS</h3><span class="skill-level">Advanced</span>
+              </div>
+            </div>
+            <div class="progress-row"><span>Proficiency</span><strong>88%</strong></div>
+            <div class="progress" role="progressbar" aria-label="SASS proficiency" aria-valuenow="88" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar" data-width="88"></div>
+            </div>
+          </article>
+          <article class="skill-card reveal" style="--d: 0.05s">
+            <div class="skill-top"><span class="skill-icon" aria-hidden="true"><i
+                  class="devicon-bootstrap-plain colored"></i></span>
+              <div>
+                <h3 class="skill-name">Bootstrap &amp; Tailwind</h3><span class="skill-level">Advanced</span>
+              </div>
+            </div>
+            <div class="progress-row"><span>Proficiency</span><strong>90%</strong></div>
+            <div class="progress" role="progressbar" aria-label="Bootstrap and Tailwind proficiency" aria-valuenow="90"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" data-width="90"></div>
+            </div>
+          </article>
+          <article class="skill-card reveal" style="--d: 0.1s">
+            <div class="skill-top"><span class="skill-icon" aria-hidden="true"><i
+                  class="fa-solid fa-mobile-screen-button"></i></span>
+              <div>
+                <h3 class="skill-name">Responsive Design</h3><span class="skill-level">Expert</span>
+              </div>
+            </div>
+            <div class="progress-row"><span>Proficiency</span><strong>96%</strong></div>
+            <div class="progress" role="progressbar" aria-label="Responsive design proficiency" aria-valuenow="96"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" data-width="96"></div>
+            </div>
+          </article>
+          <article class="skill-card reveal" style="--d: 0.15s">
+            <div class="skill-top"><span class="skill-icon" aria-hidden="true"><i
+                  class="devicon-git-plain colored"></i></span>
+              <div>
+                <h3 class="skill-name">Git &amp; GitHub</h3><span class="skill-level">Advanced</span>
+              </div>
+            </div>
+            <div class="progress-row"><span>Proficiency</span><strong>88%</strong></div>
+            <div class="progress" role="progressbar" aria-label="Git proficiency" aria-valuenow="88" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar" data-width="88"></div>
+            </div>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-top"><span class="skill-icon" aria-hidden="true"><i class="fa-solid fa-plug"></i></span>
+              <div>
+                <h3 class="skill-name">REST APIs &amp; JSON</h3><span class="skill-level">Advanced</span>
+              </div>
+            </div>
+            <div class="progress-row"><span>Proficiency</span><strong>85%</strong></div>
+            <div class="progress" role="progressbar" aria-label="REST API proficiency" aria-valuenow="85"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" data-width="85"></div>
+            </div>
+          </article>
+          <article class="skill-card reveal" style="--d: 0.05s">
+            <div class="skill-top"><span class="skill-icon" aria-hidden="true"><i
+                  class="fa-solid fa-universal-access"></i></span>
+              <div>
+                <h3 class="skill-name">Web Accessibility</h3><span class="skill-level">Advanced</span>
+              </div>
+            </div>
+            <div class="progress-row"><span>Proficiency</span><strong>86%</strong></div>
+            <div class="progress" role="progressbar" aria-label="Accessibility proficiency" aria-valuenow="86"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" data-width="86"></div>
+            </div>
+          </article>
+          <article class="skill-card reveal" style="--d: 0.1s">
+            <div class="skill-top"><span class="skill-icon" aria-hidden="true"><i
+                  class="devicon-webpack-plain colored"></i></span>
+              <div>
+                <h3 class="skill-name">Webpack &amp; Vite</h3><span class="skill-level">Proficient</span>
+              </div>
+            </div>
+            <div class="progress-row"><span>Proficiency</span><strong>78%</strong></div>
+            <div class="progress" role="progressbar" aria-label="Build tools proficiency" aria-valuenow="78"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" data-width="78"></div>
+            </div>
+          </article>
+          <article class="skill-card reveal" style="--d: 0.15s">
+            <div class="skill-top"><span class="skill-icon" aria-hidden="true"><i
+                  class="devicon-figma-plain colored"></i></span>
+              <div>
+                <h3 class="skill-name">Figma to Code</h3><span class="skill-level">Advanced</span>
+              </div>
+            </div>
+            <div class="progress-row"><span>Proficiency</span><strong>84%</strong></div>
+            <div class="progress" role="progressbar" aria-label="Figma proficiency" aria-valuenow="84" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar" data-width="84"></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="tools-strip reveal">
+          <h3>Also comfortable with</h3>
+          <div class="tags">
+            <span class="tag">jQuery</span><span class="tag">Web Performance</span><span class="tag">SEO Best
+              Practices</span>
+            <span class="tag">Cross-browser Testing</span><span class="tag">npm</span><span
+              class="tag">React</span><span class="tag">Jest</span>
+            <span class="tag">Chrome DevTools</span><span class="tag">Agile / Scrum</span><span class="tag">Jira</span>
+            <span class="tag">Netlify / Vercel</span><span class="tag">CSS Animations</span><span class="tag">BEM</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 4. Experience ================= -->
+    <section class="section alt" id="experience" aria-labelledby="exp-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Work Experience</span>
+          <h2 class="section-title" id="exp-title">My professional <span class="gradient-text">journey</span></h2>
+          <p class="section-sub">Five years of growth across product companies and agencies, from crafting landing pages
+            to leading frontend architecture.</p>
+        </div>
+
+        <ol class="timeline">
+          <li class="tl-item reveal">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <article class="tl-card">
+              <span class="tl-date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> August 2022 —
+                Present</span>
+              <h3>Software Developer</h3>
+              <p class="tl-company"><i class="fa-solid fa-building" aria-hidden="true"></i> Swipewire Technologies ·
+                Chennai, India</p>
+              <ul>
+                <li>Develop and maintain responsive web applications and e-commerce interfaces.</li>
+                <li>Handle Jira issues, monitor ticket progress and track development status.</li>
+                <li>Assist team members with technical issues, debugging and development queries.</li>
+                <li>Developing modern frontend applications using React.js, Vite, JavaScript, and other latest
+                  technologies.</li>
+                <li>Working with Node.js, REST API integration, and backend management to support web application
+                  development.</li>
+                <li>Work on WordPress blog management and frontend-related improvements.</li>
+              </ul>
+              <div class="mini-tags">
+                <span>HTML</span> <span>CSS</span>
+                <span>JavaScript</span><span>React</span><span>Nodejs</span><span>Wordpress, Bootstrap, Material UI,
+                  Tailwind CSS more.</span>
+              </div>
+            </article>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <article class="tl-card">
+              <span class="tl-date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> June 2021 - August
+                2022</span>
+              <h3>Frontend Developer</h3>
+              <p class="tl-company"><i class="fa-solid fa-building" aria-hidden="true"></i> E-global Soft Solution · New
+                Delhi, India
+              </p>
+              <ul>
+                <li>Developed responsive website interfaces.</li>
+                <li>Converted UI designs into functional web pages.</li>
+                <li>Implemented reusable HTML, CSS and JavaScript components.</li>
+                <li>Worked on cross-browser compatibility and responsive layouts.</li>
+              </ul>
+              <div class="mini-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>jQuery</span><span>Bootstrap</span><span>React</span><span>REST
+                  APIs</span><span>Git</span></div>
+            </article>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <article class="tl-card">
+              <span class="tl-date"><i class="fa-regular fa-calendar" aria-hidden="true"></i>June 2019 - May 2021</span>
+              <h3>Frontend Developer</h3>
+              <p class="tl-company"><i class="fa-solid fa-building" aria-hidden="true"></i> Navigo Web Resource ·
+                Gurgaon, India
+              </p>
+              <ul>
+                <li>Developed and maintained website frontend interfaces.</li>
+                <li>Created responsive web pages using HTML, CSS and JavaScript.</li>
+                <li>Converted design layouts into functional web pages.</li>
+                <li>Fixed UI issues and improved website compatibility.</li>
+                <li>Worked with team members to deliver website requirements.</li>
+              </ul>
+              <div class="mini-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>jQuery</span><span>Bootstrap</span><span>Photoshop</span>
+              </div>
+            </article>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <article class="tl-card">
+              <span class="tl-date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> November 2018 - June
+                2019</span>
+              <h3>Frontend Developer</h3>
+              <p class="tl-company"><i class="fa-solid fa-building" aria-hidden="true"></i> Contizant Consulting Pvt.
+                Ltd. · Gurgaon, India
+              </p>
+              <ul>
+                <li>Developed website layouts using HTML and CSS.</li>
+                <li>Created responsive website sections.</li>
+                <li>Fixed styling and layout-related issues.</li>
+                <li>Worked on converting design concepts into web interfaces.</li>
+                <li>Worked on converting psd to html and web templates.</li>
+              </ul>
+              <div class="mini-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Testing</span></div>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= 5. Projects ================= -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Featured Projects</span>
+          <h2 class="section-title" id="projects-title">Selected <span class="gradient-text">work</span></h2>
+          <p class="section-sub">A few projects I&apos;m proud of, each built with a focus on performance, usability and
+            clean code.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-media">
+              <span class="project-category">E-Commerce</span>
+              <img src="images/pro1.png" alt="Screenshot of the ShopNova e-commerce storefront showing a product grid"
+                width="1200" height="800" loading="lazy" />
+              <div class="project-overlay">
+                <a href="https://www.zlaata.com/" target="_blank" class="btn btn-primary btn-sm"
+                  aria-label="Live demo of E-Commerce Website"><i class="fa-solid fa-arrow-up-right-from-square"
+                    aria-hidden="true"></i> Live</a>
+                <!-- <a href="#" class="btn btn-outline btn-sm" aria-label="Source code of E-Commerce Website on GitHub"><i
+                    class="fa-brands fa-github" aria-hidden="true"></i> Code</a> -->
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Zlaata - Women's Fashion E-Commerce Website</h3>
+              <p>A modern, fully responsive women's fashion e-commerce platform featuring trendy ethnic, Indo-Western
+                and contemporary collections, with dynamic product discovery and a seamless shopping experience.</p>
+              <ul class="feature-list">
+                <li><i class="fa-solid fa-circle" aria-hidden="true"></i>Dynamic product listings with search, filters &
+                  sorting</li>
+                <li><i class="fa-solid fa-circle" aria-hidden="true"></i>Category-based shopping, including dresses,
+                  kurtas, co-ord sets & lehengas</li>
+                <li><i class="fa-solid fa-circle" aria-hidden="true"></i>Shopping cart, coupon management & checkout
+                  experience</li>
+                <li><i class="fa-solid fa-circle" aria-hidden="true"></i> 90+ Lighthouse performance score</li>
+              </ul>
+              <div class="mini-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP/Laravel</span><span>WordPress</span><span>REST
+                  API</span>
+              </div>
+              <div class="project-links">
+                <a href="https://www.zlaata.com/" target="_blank" class="btn btn-primary btn-sm"><i
+                    class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live Demo</a>
+                <!-- <a href="#" class="btn btn-outline btn-sm"><i class="fa-brands fa-github" aria-hidden="true"></i>
+                  GitHub</a> -->
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" style="--d: 0.1s">
+            <div class="project-media">
+              <span class="project-category">Dashboard</span>
+              <img src="images/pro2.png" alt="Screenshot of the Insightly admin dashboard with KPI cards and charts"
+                width="1200" height="800" loading="lazy" />
+              <div class="project-overlay">
+                <a href="https://crmfarm.in/" target="_blank" class="btn btn-primary btn-sm"
+                  aria-label="Live demo of Admin Dashboard"><i class="fa-solid fa-arrow-up-right-from-square"
+                    aria-hidden="true"></i> Live</a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>CRMFarm - Customer Relationship Management </h3>
+              <p>A modern, responsive CRM platform designed to streamline sales, marketing and customer management
+                through intelligent automation, lead tracking and real-time analytics. Built to support industries such
+                as Education, Retail and Real Estate.</p>
+              <ul class="feature-list">
+                <li><i class="fa-solid fa-circle" aria-hidden="true"></i>Centralized customer, contact and lead
+                  management</li>
+                <li><i class="fa-solid fa-circle" aria-hidden="true"></i> Automated follow-ups, reminders and workflow
+                  management</li>
+                <li><i class="fa-solid fa-circle" aria-hidden="true"></i>Appointment, task and project management</li>
+                <li><i class="fa-solid fa-circle" aria-hidden="true"></i>Responsive interface with role-based access and
+                  team collaboration</li>
+              </ul>
+              <div class="mini-tags">
+                <span>React.js</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Bootstrap</span><span>REST
+                  APIs</span>
+              </div>
+              <div class="project-links">
+                <a href="https://crmfarm.in/" target="_blank" class="btn btn-primary btn-sm"><i
+                    class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" style="--d: 0.2s">
+            <div class="project-media">
+              <span class="project-category">Support</span>
+              <img src="images/pro3.png" alt="Screenshot of the Northwind Studio business website hero section"
+                width="1200" height="800" loading="lazy" />
+              <div class="project-overlay">
+                <a href="https://printertales.com/" target="_blank" class="btn btn-primary btn-sm"
+                  aria-label="Live demo of Business Website"><i class="fa-solid fa-arrow-up-right-from-square"
+                    aria-hidden="true"></i> Live</a>
+
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Printer Tales - Online Printer Support & Troubleshooting Platform</h3>
+              <p>A user-friendly, content-driven platform designed to help users troubleshoot printer issues, access
+                setup guides, download relevant resources and get technical assistance for various printer brands and
+                models.</p>
+              <ul class="feature-list">
+                <li><i class="fa-solid fa-circle" aria-hidden="true"></i> Printer setup and installation guides</li>
+                <li><i class="fa-solid fa-circle" aria-hidden="true"></i> Troubleshooting solutions for printer issues
+                </li>
+                <li><i class="fa-solid fa-circle" aria-hidden="true"></i> Printer driver and software assistance</li>
+                <li><i class="fa-solid fa-circle" aria-hidden="true"></i> Responsive UI for seamless access across
+                  desktop and mobile devices</li>
+              </ul>
+              <div class="mini-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span><span>REST API</span>
+              </div>
+              <div class="project-links">
+                <a href="https://printertales.com/" target="_blank" class="btn btn-primary btn-sm"><i
+                    class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 6. Education ================= -->
+    <section class="section alt" id="education" aria-labelledby="edu-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Education &amp; Qualifications</span>
+          <h2 class="section-title" id="edu-title">Learning that <span class="gradient-text">never stops</span></h2>
+          <p class="section-sub">A solid academic foundation, backed by continuous learning and industry certifications.
+          </p>
+        </div>
+
+        <div class="edu-grid">
+          <article class="edu-card reveal">
+            <div class="edu-icon" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></div>
+            <p class="edu-year">2013 — 2017</p>
+            <h3>Bachelor of Technology in Information Technology</h3>
+            <p class="edu-inst">VBSPU, Jaunpur</p>
+            <p>Graduated with first division. Focused on web technologies, data structures, algorithms and
+              human-computer
+              interaction.</p>
+          </article>
+          <article class="edu-card reveal" style="--d: 0.1s">
+            <div class="edu-icon" aria-hidden="true"><i class="fa-solid fa-school"></i></div>
+            <p class="edu-year">2010 — 2011</p>
+            <h3>Higher Secondary Education (Science)</h3>
+            <p class="edu-inst">RPIC , Azamgarh</p>
+            <p>Majored in Mathematics and Science, where I built my very first website and fell in love with
+              the web.</p>
+          </article>
+          <article class="edu-card reveal" style="--d: 0.2s">
+            <div class="edu-icon" aria-hidden="true"><i class="fa-solid fa-award"></i></div>
+            <p class="edu-year">Certifications</p>
+            <h3>Udemy</h3>
+            <p class="edu-inst">Software Development</p>
+            <ul class="cert-list">
+              <li><i class="fa-solid fa-certificate" aria-hidden="true"></i> Front-End Developer Certificate</li>
+              <li><i class="fa-solid fa-certificate" aria-hidden="true"></i> JavaScript Algorithms</li>
+              <li><i class="fa-solid fa-certificate" aria-hidden="true"></i> Google UX Design </li>
+              <li><i class="fa-solid fa-certificate" aria-hidden="true"></i> Web Accessibility </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 7. Services ================= -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Services</span>
+          <h2 class="section-title" id="services-title">How I can <span class="gradient-text">help you</span></h2>
+          <p class="section-sub">End-to-end frontend services to take your product from idea to a polished,
+            production-ready experience.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <span class="service-num" aria-hidden="true">01</span>
+            <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-laptop-code"></i></div>
+            <h3>Frontend Development</h3>
+            <p>Clean, scalable and maintainable code using modern HTML, CSS and JavaScript best practices.</p>
+          </article>
+          <article class="service-card reveal" style="--d: 0.08s">
+            <span class="service-num" aria-hidden="true">02</span>
+            <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-mobile-screen-button"></i></div>
+            <h3>Responsive Web Design</h3>
+            <p>Mobile-first layouts that look and work beautifully on phones, tablets and desktops.</p>
+          </article>
+          <article class="service-card reveal" style="--d: 0.16s">
+            <span class="service-num" aria-hidden="true">03</span>
+            <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-pen-ruler"></i></div>
+            <h3>UI Implementation</h3>
+            <p>Pixel-perfect conversion of Figma, XD or Sketch designs into interactive interfaces.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-num" aria-hidden="true">04</span>
+            <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-gauge-high"></i></div>
+            <h3>Performance Optimisation</h3>
+            <p>Faster load times, better Core Web Vitals and higher Lighthouse scores for your site.</p>
+          </article>
+          <article class="service-card reveal" style="--d: 0.08s">
+            <span class="service-num" aria-hidden="true">05</span>
+            <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-cart-shopping"></i></div>
+            <h3>E-Commerce Frontends</h3>
+            <p>Conversion-focused storefronts with intuitive product browsing, cart and checkout flows.</p>
+          </article>
+          <article class="service-card reveal" style="--d: 0.16s">
+            <span class="service-num" aria-hidden="true">06</span>
+            <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <h3>Website Maintenance</h3>
+            <p>Bug fixes, feature updates, accessibility audits and ongoing support for existing sites.</p>
+          </article>
+        </div>
+
+        <div class="cta-band reveal">
+          <div>
+            <h3>Have a project in mind?</h3>
+            <p>Let&apos;s build something great together. I usually reply within 24 hours.</p>
+          </div>
+          <a href="#contact" class="btn btn-primary">Start a Project <i class="fa-solid fa-arrow-right"
+              aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 8. Contact ================= -->
+    <section class="section alt" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Contact</span>
+          <h2 class="section-title" id="contact-title">Let&apos;s <span class="gradient-text">work together</span></h2>
+          <p class="section-sub">Open to full-time roles, freelance projects and collaborations. Drop me a message and
+            let&apos;s talk.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <a href="mailto:you@example.com" class="contact-item">
+              <span class="ci-icon" aria-hidden="true"><i class="fa-regular fa-envelope"></i></span>
+              <span><small>Email</small><strong>shesh212333@gmail.com</strong></span>
+            </a>
+            <a href="tel:+15551234567" class="contact-item">
+              <span class="ci-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></span>
+              <span><small>Phone</small><strong>+91 (840) 006-0435</strong></span>
+            </a>
+            <div class="contact-item">
+              <span class="ci-icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></span>
+              <span><small>Location</small><strong>Chennai, India (Open to Remote)</strong></span>
+            </div>
+            <div class="contact-social">
+              <h3>Find me online</h3>
+              <div class="socials">
+                <a href="https://github.com/uisheshnath" target="_blank" rel="noopener noreferrer"
+                  aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/shesh212333/" target="_blank" rel="noopener noreferrer"
+                  aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                <!-- <a href="https://x.com/yourhandle" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><i
+                    class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+                <a href="https://dribbble.com/Sheshnath Chauhan" target="_blank" rel="noopener noreferrer"
+                  aria-label="Dribbble"><i class="fa-brands fa-dribbble" aria-hidden="true"></i></a> -->
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate style="--d: 0.1s">
+            <iframe id="myForms" src="https://docs.google.com/forms/d/e/1FAIpQLSfuenaKAnEEztxeD4lKiez3l-7hjeGTpDm4QmZ0R_iKXc9q4g/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <!-- <div class="form-row">
+              <div class="field">
+                <label for="name">Sheshnath Chauhan</label>
+                <input type="text" id="name" name="name" placeholder="" autocomplete="name" required
+                  aria-describedby="name-error" />
+                <span class="error-msg" id="name-error" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="" autocomplete="email" required
+                  aria-describedby="email-error" />
+                <span class="error-msg" id="email-error" aria-live="polite"></span>
+              </div>
+            </div>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="" required aria-describedby="subject-error" />
+              <span class="error-msg" id="subject-error" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="" required aria-describedby="message-error"></textarea>
+              <span class="error-msg" id="message-error" aria-live="polite"></span>
+            </div>
+            <button type="submit" class="btn btn-primary"><i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
+              Send Message</button>
+            <div class="form-status" id="formStatus" role="status">
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i> Thanks! Your message has been sent. I&apos;ll
+              get back to you soon.
+            </div> -->
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= 9. Footer ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="logo"><span class="logo-mark" aria-hidden="true">SN</span><span>Sheshnath Chauhan<span
+                class="dot">.</span></span></a>
+          <p>Senior Frontend Software Developer crafting fast, accessible and beautiful web experiences.</p>
+          <div class="socials">
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+                class="fa-brands fa-github" aria-hidden="true"></i></a>
+            <a href="https://linkedin.com/in/Sheshnath Chauhan" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="https://x.com/yourhandle" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><i
+                class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+            <a href="mailto:you@example.com" aria-label="Email"><i class="fa-regular fa-envelope"
+                aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <nav aria-label="Footer quick links">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Footer more links">
+          <h3>More</h3>
+          <ul class="footer-links">
+            <li><a href="#education">Education</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="resume/resume.pdf" download>Download Resume</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- <div class="footer-bottom">
+        <p style="margin: 0">&copy; <span id="year">2026</span> Sheshnath Chauhan. All rights reserved.</p>
+        <p style="margin: 0">Designed &amp; built with <span class="heart" aria-label="love">&hearts;</span> using HTML,
+          CSS &amp; JavaScript</p>
+      </div> -->
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
